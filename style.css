@@ -233,6 +233,7 @@ li {
   /* width: 450px; */
   height: 150px;
   max-width: 100%;
+  box-shadow: 0px 0px 16px 4px lightgrey;
 }
 
 .home-link {
@@ -316,8 +317,13 @@ li {
     'image link';
 }
 
-.ref-container img {
+.ref-image-link {
+  grid-area: image;
+}
+
+.ref-image {
   width: 100%;
+  box-shadow: 0px 0px 16px 4px lightgrey;
 }
 
 .ref-webaddress {
@@ -333,25 +339,9 @@ li {
 
 .ref-link {
   grid-area: link;
-  font-style: italic;
   font-size: 1.1rem;
   color: var(--nav-color);
   text-decoration: none;
-}
-
-.ref-wrapper {
-  position: relative;
-  grid-area: image;
-}
-
-.shadow {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  height: 281px;
-  width: 500px;
-  border-bottom: 2px solid var(--nav-color);
-  border-right: 2px solid var(--nav-color);
 }
 
 @media screen and (max-width: 1199px) {
@@ -389,6 +379,7 @@ li {
 
 .person-container img {
   grid-area: image;
+  box-shadow: 0px 0px 16px 4px lightgrey;
 }
 
 .person-name {
@@ -469,7 +460,7 @@ li {
 }
 
 .address-maps {
-  box-shadow: 10px 10px 5px var(--nav-color);
+  box-shadow: 0px 0px 16px 4px lightgrey;
 }
 
 @media screen and (max-width: 1199px) {
