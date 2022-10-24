@@ -108,6 +108,7 @@ header {
     top: 0;
     z-index: 999;
     min-height: var(--header-height);
+    border-bottom: none;
   }
 
   .header-container {
@@ -398,11 +399,6 @@ li {
   grid-area: text;
 }
 
-.skills-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 @media screen and (max-width: 1199px) {
   .person-container {
     grid-template-areas:
@@ -410,11 +406,6 @@ li {
       'name'
       'profession'
       'text';
-  }
-
-  .skills-container {
-    flex-wrap: wrap;
-    row-gap: 2rem;
   }
 }
 
