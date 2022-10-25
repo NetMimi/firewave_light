@@ -258,6 +258,11 @@ li {
     justify-content: space-evenly;
     gap: 1rem;
   }
+
+  .home-container img {
+    width: 500px;
+    height: 100%;
+  }
 }
 
 /* ---------- OFFERS ---------- */
@@ -551,6 +556,28 @@ button {
   color: var(--secondary);
   border: none;
   border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .project-site-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      'title'
+      'image'
+      'text';
+  }
+
+  .moodboard-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      'mb-title'
+      'mb-image'
+      'mb-text'
+      'mb-second'
+      'web';
+  }
 }
 
 /* ---------- FOOTER ---------- */
