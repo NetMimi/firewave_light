@@ -498,11 +498,12 @@ li {
   margin-bottom: 5rem;
   column-gap: 4rem;
   grid-template-columns: 1fr 500px;
-  grid-template-rows: 3rem auto;
+  grid-template-rows: 3rem auto auto auto;
   grid-template-areas:
     'mb-title mb-image'
     'mb-text mb-image'
-    'mb-second mb-image';
+    'mb-second mb-image'
+    'web mb-image';
 }
 
 .moodboard-title {
@@ -511,17 +512,28 @@ li {
   padding-bottom: 0;
 }
 
-.moodboard-image {
-  grid-area: mb-image;
-  width: 100%;
-}
-
 .moodboard-text {
   grid-area: mb-text;
 }
 
 .moodboard-secondtext {
   grid-area: mb-second;
+}
+
+.project-web {
+  grid-area: web;
+}
+
+.project-weblink {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-size: var(--secondary-fontsize);
+}
+
+.moodboard-image {
+  grid-area: mb-image;
+  width: 100%;
+  box-shadow: 0px 0px 16px 4px lightgrey;
 }
 
 .button-container {
