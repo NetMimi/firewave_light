@@ -226,19 +226,35 @@ li {
 }
 
 .home-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 5rem;
+  display: grid;
+  grid-template: 225px 1fr;
+  grid-template-areas:
+    'image title'
+    'image text'
+    'image link';
+  column-gap: 2rem;
+  margin-bottom: 5rem;
 }
 
 .home-container img {
   /* width: 450px; */
+  grid-area: image;
   height: 150px;
   max-width: 100%;
   box-shadow: 0px 0px 16px 4px lightgrey;
 }
 
+.home-title {
+  grid-area: title;
+  margin-top: 0;
+}
+
+.home-text {
+  grid-area: text;
+}
+
 .home-link {
+  grid-area: link;
   color: var(--nav-color);
   text-decoration: none;
 }
@@ -592,4 +608,9 @@ footer {
   text-align: center;
   width: 100%;
   margin-top: 2.5rem;
+}
+
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
 }
