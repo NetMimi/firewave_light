@@ -2,6 +2,7 @@
   --primary: #111111;
   --secondary: #f1efef;
   --nav-color: #ff6e0d;
+  --hover-color: #ee660b;
   --error-color: #f73e3e;
   --content-width: 1200px;
   --secondary-fontsize: 1.3rem;
@@ -47,7 +48,6 @@ h2 {
   font-size: 1.6rem;
   margin-top: 5rem;
   margin-bottom: 1.875rem;
-  color: var(--nav-color);
 }
 
 p {
@@ -352,7 +352,7 @@ li {
 .ref-webaddress {
   grid-area: web;
   text-decoration: none;
-  color: var(--nav-color);
+  color: var(--primary);
 }
 
 .ref-webaddress h2 {
@@ -562,16 +562,24 @@ li {
   justify-content: end;
 }
 
+.attention {
+  color: var(--error-color);
+}
+
 button {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1.2rem;
-  background-color: var(--primary);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.1rem;
+  background-color: var(--nav-color);
   color: var(--secondary);
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
+}
+
+button:hover {
+  background-color: var(--hover-color);
 }
 
 @media screen and (max-width: 1199px) {
