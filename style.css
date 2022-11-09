@@ -270,8 +270,13 @@ li {
   }
 
   .home-container {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    grid-template: 1fr;
+    grid-template-areas:
+      'title'
+      'image'
+      'text'
+      'link';
+    justify-items: center;
     gap: 1rem;
   }
 
@@ -363,7 +368,7 @@ li {
   grid-area: text;
 }
 
-.ref-link {
+.home-link {
   grid-area: link;
   font-size: 1.1rem;
   color: var(--nav-color);
@@ -378,14 +383,12 @@ li {
       'image'
       'text'
       'link';
+    justify-items: center;
   }
 
-  .ref-container img {
+  .ref-image {
     margin-bottom: 2rem;
-  }
-
-  .ref-link {
-    text-align: center;
+    max-width: 500px;
   }
 }
 
@@ -426,11 +429,14 @@ li {
 
 @media screen and (max-width: 1199px) {
   .person-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr;
     grid-template-areas:
       'image'
       'name'
       'profession'
       'text';
+    justify-items: center;
   }
 }
 
@@ -576,6 +582,7 @@ button {
   color: var(--secondary);
   border: none;
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 button:hover {
