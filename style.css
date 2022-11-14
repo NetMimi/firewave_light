@@ -29,7 +29,13 @@
 }
 
 body {
-  padding-bottom: 8rem;
+  margin: 0;
+}
+
+.flex-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
@@ -227,7 +233,7 @@ li {
 
 .home-container {
   display: grid;
-  grid-template: 225px 1fr;
+  grid-template: 300px 1fr;
   grid-template-areas:
     'image title'
     'image text'
@@ -239,7 +245,7 @@ li {
 .home-container img {
   /* width: 450px; */
   grid-area: image;
-  height: 150px;
+  height: 200px;
   max-width: 100%;
   box-shadow: 0px 0px 16px 4px lightgrey;
 }
@@ -614,18 +620,46 @@ button:hover {
 /* ---------- FOOTER ---------- */
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   background-color: var(--primary);
   padding: 1.25rem;
   color: var(--secondary);
-  text-align: center;
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: auto;
 }
 
-footer a {
-  color: var(--secondary);
+.footer-container {
+  display: flex;
+  max-width: var(--content-width);
+  justify-content: space-between;
+  margin: auto;
+}
+
+.footer-image {
+  max-width: 150px;
+  height: 100%;
+}
+
+.footer-address {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5rem;
+}
+
+.footer-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: var(--nav-color);
+}
+
+.footer-infos {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footer-impressum {
+  color: var(--nav-color);
   text-decoration: none;
 }
