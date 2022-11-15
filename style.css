@@ -617,6 +617,18 @@ button:hover {
   }
 }
 
+/* ---------- IMPRESSUM ---------- */
+
+.impressum-contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.impressum-design-container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ---------- FOOTER ---------- */
 
 footer {
