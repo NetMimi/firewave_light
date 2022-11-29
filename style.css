@@ -619,6 +619,11 @@ button:hover {
 
 /* ---------- IMPRESSUM ---------- */
 
+.impressum-container {
+  margin-bottom: 5rem;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
 .impressum-contact-container {
   display: flex;
   flex-direction: column;
@@ -674,4 +679,26 @@ footer {
 .footer-impressum {
   color: var(--nav-color);
   text-decoration: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-image {
+    margin-bottom: 1rem;
+  }
+
+  .footer-address {
+    margin-bottom: 1rem;
+  }
+
+  .footer-contact {
+    margin-bottom: 1rem;
+  }
+
+  .footer-impressum {
+    margin-bottom: 1rem;
+  }
 }
