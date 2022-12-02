@@ -201,6 +201,7 @@ li {
   #hamburger:checked ~ .nav-container {
     display: flex;
     align-items: center;
+    border-top: 2px solid var(--nav-color);
   }
 
   #hamburger:checked ~ label > .line:nth-child(1) {
